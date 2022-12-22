@@ -1,0 +1,8 @@
+option pricing neural network
+
+input layer: source, date, price
+
+hidden layer: compute and generate chain, charts
+
+output layer: file, display
+
