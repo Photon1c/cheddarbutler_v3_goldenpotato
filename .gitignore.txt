@@ -1,1 +1,3 @@
-/development_notes
+development_notes
+config.py
+jupyternotebook
