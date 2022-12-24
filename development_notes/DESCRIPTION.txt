@@ -6,3 +6,20 @@ hidden layer: compute and generate chain, charts
 
 output layer: file, display
 
+
+additional features:
+
+getting market trading hours and synchronizing these with a script that runs around these is critical in order to build an automated set of modules that can interact with one another to achieve a neural network operation.
+
+It is easy to check when the market is open, and when it is the program can then run, at which point it may be scheduled to run at closing time and at the next market open. The programmatic directional flow of these steps is as follows:
+
+-run clockie.py, if market is open, then run start.py once at the beginning of the trading day, and lastly at closing time.
+
+This simple set of instructions ensures that clockie.py acts as the failsafe mechanism which cause the following chain to occur:
+
+If broker information is configured in the config.py file, then the sell.py module can run on a conditional set up of golden potato. The buy_o module usually imports the buy_s module depending on whether ally or alpaca is used to retrieve this information in any way. Additionally, since the buy_o and buy_s modules can run only if a broker is configured, it makes sense to integrate the original idea of splitting the sell and buy modules instead into one. This way the broker information is implicitly assumed to be configured. there should be no need to have separate sell and buy python files, so it is therefore practical to merge them into one file. As the buy_o module imports the buy_s module, the buy_s module should import the sell module as well. Experience has shown that activating the sell module while debugging and well beyond that is advisable and instead execute sale orders manually. This is the most prudent and safest method found so far that will beat even stop losses liquidating positions making minimal gains.
+
+
+
+
+
