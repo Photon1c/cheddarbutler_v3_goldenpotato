@@ -6,6 +6,11 @@ from datetime import date
 import datetime
 
 
+
+source_greeting = str("For the data source: Enter M if you will be running Golden Potato using a list of default \ndaily top moving stocks. Enter L if you will be manually entering a list of stock tickers. \nFinally, enter F if you want to enter the name of a CSV file containing a list of stock tickers. \nPlease refer to the documentation for the preferred format. ")
+
+
+
 quick_list = []
 option_price = []
 
