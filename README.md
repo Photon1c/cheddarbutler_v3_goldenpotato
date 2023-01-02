@@ -10,6 +10,8 @@ the result is generated into both a file and the terminal output.
 <br>
 ## Pending tasks:
 <br>
+deadline: Jan 10, 2022
+<br>
 - [ ] Create iterable list of stock tickers to pass through functions
 - [ ] Create trade execution function
 - [ ] Generate additional sample outputs
