@@ -2,6 +2,8 @@
 #Example: for stock i find options where price is <.5. How to handle multiple results?
 import yfinance as yf
 
+
+
 quick_list = []
 
 def option_chain_generator():
@@ -30,5 +32,3 @@ def option_chain_generator():
             print("\n", "SELL", i, ", Optimal Put Chain:", "\n\n", optpzdf, "\n\n")
         except ValueError as err:
             print("no puts available for ", i, "\n\n")    
-for i in quick_list:
-    option_chain_generator()

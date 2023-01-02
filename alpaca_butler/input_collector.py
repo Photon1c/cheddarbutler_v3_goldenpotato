@@ -20,11 +20,13 @@ two_weeks_from_nearest_friday_formatted = two_weeks_from_nearest_friday.strftime
 source_greeting = str("For the data source: Enter M if you will be running Golden Potato using a list of default \ndaily top moving stocks. Enter L if you will be manually entering a list of stock tickers. \nFinally, enter F if you want to enter the name of a CSV file containing a list of stock tickers. \nPlease refer to the documentation for the preferred format. ")
 
 
+manual_df = pd.DataFrame()
 
-quick_list = []
+Symbols = []
 option_price = []
 
 def collect_inputs():
+    quick_list = []
     print(source_greeting)
     source = input("Enter M, L, or F: ")
     print(source)
@@ -32,10 +34,15 @@ def collect_inputs():
     price_set = input("For the price range, Enter D for the default price range of no more than $1 per option premium, or M to manually set a price cutoff: ")
 
     if source == "L":
-        stock_list = input("Enter stock tickers separated by a comma: ")
-        quick_list.append(stock_list)
-        out_quick = pd.DataFrame(quick_list)
-        out_quick.to_csv(r'D:\mainline\goldenpotato\outputs\manual_list.csv')
+        #takes user input and converts it to list
+        L = [x for x in input("Enter stock tickers separated by a comma: \n").split(', ')]
+        print("\n", "The stock tickers passed will be: ", L) 
+        Symbols.append(L)
+        
+        
+        
+        
+        
     if source == "F":
         source = pd.read_csv(r"D:\mainline\goldenpotato\datasets\sample_csv_list.csv")
         quick_list.append(source)
@@ -70,10 +77,10 @@ def collect_inputs():
     if price_set == "M":
         optionc = input("Enter premium cutoff price, this will consider both calls and puts: ")
         option_price.append(optionc)
-    print(quick_list)
-    print(s_date)
-    print(e_date)
-    print(option_price)
+    print(Symbols)
+    #print(s_date)
+    #print(e_date)
+    #print(option_price)
     format = "%Y-%m-%d"
 
     
@@ -97,7 +104,7 @@ def after_hours():
     df_final = dfgainers2.append(dflosers2)
     df_final2 = pd.DataFrame()
     df_final2["Symbol"] = df_final
-    df_final2["Symbol"].to_csv(r'[path to your csv file with stock tickers]')
+    df_final2["Symbol"].to_csv(input("name of csv file in datasets folder: "))
     after_hourdf.append(df_final2)
     
 
@@ -124,3 +131,4 @@ now = date.today()
 today = now.strftime('%Y-%m-%d')
 yesterday = (now - pd.Timedelta('1day')).strftime('%Y-%m-%d')
 ninedaysago = (now - pd.Timedelta('9day')).strftime('%Y-%m-%d')
+
