@@ -1,6 +1,8 @@
 import alpaca_trade_api as tradeapi
 import config
 
+#checks if market is open and displays user friendly message.
+
 api = tradeapi.REST(key_id=config.LIVE_API_KEY, secret_key=config.LIVE_SECRET_KEY, api_version='v2',
                                         base_url=config.LIVE_API_BASE_URL)
 
