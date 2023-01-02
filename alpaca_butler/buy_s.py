@@ -13,7 +13,7 @@ api = tradeapi.REST(key_id=config.LIVE_API_KEY, secret_key=config.LIVE_SECRET_KE
                                         base_url=config.LIVE_API_BASE_URL)
 
 
-
+quick_list = []
 
 #create dataframe adding EMA columns to date, stock, and volume columns.     
 def dataframe_creator():
@@ -47,4 +47,6 @@ def dataframe_creator():
         print(quotes_df.tail(1))
     else:
         print("Stock", i, "is not within selling parameters")
-dataframe_creator()
+        
+for each in quick_list:        
+    dataframe_creator()
