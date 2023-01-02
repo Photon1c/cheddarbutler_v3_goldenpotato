@@ -7,6 +7,7 @@ the user. The second is a hidden layer which screens for the data requested. Fin
 the result is generated into both a file and the terminal output. 
 
 ```mermaid
+graph TD;
     Input Layer-->Hidden Layer;
     Hidden Layer-->Output Layer;
     Output Layer-->Input Layer;
