@@ -1,3 +1,20 @@
+import alpaca_trade_api as tradeapi
+import config
+import logging
+from alpaca_trade_api.rest import REST, TimeFrame
+import datetime as dt
+import pandas as pd
+from datetime import date
+import datetime
+import yfinance as yf
+
+#call API
+api = tradeapi.REST(key_id=config.LIVE_API_KEY, secret_key=config.LIVE_SECRET_KEY, api_version='v2',
+                                        base_url=config.LIVE_API_BASE_URL)
+
+
+
+
 #create dataframe adding EMA columns to date, stock, and volume columns.     
 def dataframe_creator():
     target_symbols_long = []
@@ -30,3 +47,4 @@ def dataframe_creator():
         print(quotes_df.tail(1))
     else:
         print("Stock", i, "is not within selling parameters")
+dataframe_creator()

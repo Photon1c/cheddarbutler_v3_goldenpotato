@@ -29,3 +29,4 @@ def option_chain_generator():
             print("\n", "SELL", i, ", Optimal Put Chain:", "\n\n", optpzdf, "\n\n")
         except ValueError as err:
             print("no puts available for ", i, "\n\n")    
+option_chain_generator()

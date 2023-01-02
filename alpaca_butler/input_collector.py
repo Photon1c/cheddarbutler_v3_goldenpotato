@@ -33,12 +33,12 @@ def collect_inputs():
 
     if source == "L":
         stock_list = input("Enter stock tickers separated by a comma: ")
-        quick_list.concat(stock_list)
+        quick_list.append(stock_list)
         out_quick = pd.DataFrame(quick_list)
         out_quick.to_csv(r'D:\mainline\goldenpotato\outputs\quick_list.csv')
     if source == "F":
         source = pd.read_csv(r"D:\mainline\goldenpotato\datasets\sample_csv_list.csv")
-        quick_list.concat(source)
+        quick_list.join(source)
     if source == "M":
         after_hours()
         quick_list.concat(after_hourdf)    
