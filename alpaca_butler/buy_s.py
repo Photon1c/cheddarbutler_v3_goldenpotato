@@ -15,7 +15,7 @@ api = tradeapi.REST(key_id=config.LIVE_API_KEY, secret_key=config.LIVE_SECRET_KE
 target_list_long = []
 target_list_short = []
 
-
+i = 0
 
 quick_list = []
 Symbols = []

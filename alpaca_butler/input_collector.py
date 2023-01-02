@@ -37,7 +37,12 @@ def collect_inputs():
         #takes user input and converts it to list
         L = [x for x in input("Enter stock tickers separated by a comma: \n").split(', ')]
         print("\n", "The stock tickers passed will be: ", L) 
-        Symbols.append(L)
+        quick_list.append(L)
+        quick_df = pd.DataFrame(quick_list)
+        quick_df['symbol'] = quick_df[0]
+  
+        print(quick_df)
+        
         
         
         
