@@ -8,9 +8,8 @@ the result is generated into both a file and the terminal output.
 
 ```mermaid
 graph TD;
-    Input Layer-->Hidden Layer;
-    Hidden Layer-->Output Layer;
-    Output Layer-->Input Layer;
+    A-->B;
+    B-->C;
 ```
   
 
