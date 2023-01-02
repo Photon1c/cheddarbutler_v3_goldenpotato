@@ -7,3 +7,9 @@ the user. The second is a hidden layer which screens for the data requested. Fin
 the result is generated into both a file and the terminal output. 
 
 ***Check back for updates to this project***
+
+###Useful Resources###
+
+[yfinance](https://pypi.org/project/yfinance/)
+[Alpaca Trade API](https://github.com/alpacahq/alpaca-trade-api-python)
+[Ally API](https://www.ally.com/api/invest/documentation/getting-started/)
