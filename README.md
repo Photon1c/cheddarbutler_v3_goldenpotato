@@ -8,14 +8,14 @@ the result is generated into both a file and the terminal output.
 
 ***Check back for updates to this project***
 <br>
-##Pending tasks:
+## Pending tasks:
 <br>
 - [ ] Create iterable list of stock tickers to pass through functions
 - [ ] Create trade execution function
 - [ ] Generate additional sample outputs
 
 
-###Useful Resources###
+### Useful Resources
 
 [yfinance](https://pypi.org/project/yfinance/)<br><br>
 [Alpaca Trade API](https://github.com/alpacahq/alpaca-trade-api-python)<br><br>
