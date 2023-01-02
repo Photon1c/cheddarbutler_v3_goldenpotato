@@ -8,8 +8,14 @@ the result is generated into both a file and the terminal output.
 
 ```mermaid
 graph TD;
-    A-->B;
-    B-->C;
+stateDiagram-v2
+[*] --> Input
+Input --> [*]
+Input --> Hidden Layer
+Hidden Layer --> Input
+Hidden Layer --> Output
+Output --> [*]
+
 ```
   
 
