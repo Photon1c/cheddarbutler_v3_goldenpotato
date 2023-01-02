@@ -7,12 +7,11 @@ the user. The second is a hidden layer which screens for the data requested. Fin
 the result is generated into both a file and the terminal output. 
 
 ```mermaid
-
-
-```
     Input Layer-->Hidden Layer;
     Hidden Layer-->Output Layer;
     Output Layer-->Input Layer;
+```
+  
 
 
 ***Check back for updates to this project***
