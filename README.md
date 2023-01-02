@@ -13,7 +13,6 @@ Input --> [*]
 Input --> Hidden
 Hidden --> Input
 Hidden --> Output
-Output <-- [*]
 
 ```
   
