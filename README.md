@@ -8,7 +8,7 @@ the result is generated into both a file and the terminal output.
 
 ***Check back for updates to this project***
 <br>
-## Pending tasks:
+Pending tasks:
 <br>
 deadline: Jan 10, 2022
 <br>
