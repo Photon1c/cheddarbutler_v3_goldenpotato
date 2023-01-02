@@ -6,11 +6,20 @@ simplified into three steps. The first takes the inputs as indicated by
 the user. The second is a hidden layer which screens for the data requested. Finally
 the result is generated into both a file and the terminal output. 
 
+```mermaid
+
+
+```
+    Input Layer-->Hidden Layer;
+    Hidden Layer-->Output Layer;
+    Output Layer-->Input Layer;
+
+
 ***Check back for updates to this project***
 <br>
 Pending tasks:
 <br>
-deadline: Jan 10, 2022
+Deadline: Jan 10, 2022
 <br>
 - [ ] Create iterable list of stock tickers to pass through functions
 - [ ] Create trade execution function
