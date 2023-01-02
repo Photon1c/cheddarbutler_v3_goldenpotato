@@ -8,12 +8,12 @@ the result is generated into both a file and the terminal output.
 
 ```mermaid
 stateDiagram-v2
-[*] --> Input Layer
-Input Layer --> [*]
-Input Layer --> Hidden Layer
-Hidden Layer --> Input Layer
-Hidden Layer --> Output Layer
-Output Layer --> [*]
+[*] --> Input
+Input --> [*]
+Input --> Hidden
+Hidden --> Input
+Hidden --> Output
+Output --> [*]
 
 ```
   
