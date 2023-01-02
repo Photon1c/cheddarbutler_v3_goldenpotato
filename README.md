@@ -8,8 +8,8 @@ the result is generated into both a file and the terminal output.
 
 ***Check back for updates to this project***
 <br>
-Pending tasks
-
+##Pending tasks:
+<br>
 - [ ] Create iterable list of stock tickers to pass through functions
 - [ ] Create trade execution function
 - [ ] Generate additional sample outputs
