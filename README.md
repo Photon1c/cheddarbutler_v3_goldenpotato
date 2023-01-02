@@ -9,12 +9,12 @@ the result is generated into both a file and the terminal output.
 ```mermaid
 graph TD;
 stateDiagram-v2
-[*] --> Input
-Input --> [*]
-Input --> Hidden Layer
-Hidden Layer --> Input
-Hidden Layer --> Output
-Output --> [*]
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
 
 ```
   
