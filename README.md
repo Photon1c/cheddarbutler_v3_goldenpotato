@@ -25,7 +25,7 @@ Output --> Input: Review
 <br>
 Pending tasks:
 <br>
-Deadline: Jan 10, 2022
+Deadline: Jan 10, 2023
 <br>
 - [ ] Create iterable list of stock tickers to pass through functions
 - [ ] Create trade execution function
