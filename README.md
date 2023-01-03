@@ -40,3 +40,21 @@ Deadline: Jan 10, 2023
 [Ally API](https://www.ally.com/api/invest/documentation/getting-started/)<br><br>
 [Mermaid](https://github.com/mermaid-js/mermaid)<br><br>
 [Cheddar Butler](https://www.cheddarbutler.com)
+
+<details><summary>Click for Disclaimer Information</summary>
+<p>
+
+#### Notes:
+
+*This project is meant purely for educational purposes only. As with any mathematical model it can be dangerous to rely blindly on results without thorough scrutiny.* 
+  
+ *Code blocks in this project will be presented in the following format:*  
+  
+```python
+   run Command
+```
+
+</p>
+</details>
+
+
