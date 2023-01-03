@@ -34,14 +34,13 @@ def collect_inputs():
     price_set = input("For the price range, Enter D for the default price range of no more than $1 per option premium, or M to manually set a price cutoff: ")
 
     if source == "L":
-        #takes user input and converts it to list
-        L = [x for x in input("Enter stock tickers separated by a comma: \n").split(', ')]
-        print("\n", "The stock tickers passed will be: ", L) 
-        quick_list.append(L)
-        quick_df = pd.DataFrame(quick_list)
-        quick_df['symbol'] = quick_df[0]
-  
-        print(quick_df)
+        #takes user input and converts it to data frame
+        stock_list = input("Enter stock tickers separated by a comma: \n").split(', ')
+        quick_list.append(stock_list)
+        out_quick = pd.DataFrame(quick_list).T
+        print(out_quick)
+
+
         
         
         
@@ -70,7 +69,6 @@ def collect_inputs():
             tempe = e_date
             e_date_list.append(tempe)
     if date_set == "D":
-        s_date = []
         s_date = []
         s_date == get_first_friday
         e_date = []
