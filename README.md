@@ -31,7 +31,7 @@ Deadline: Jan 10, 2023
 - [ ] Create trade execution function
 - [ ] Generate additional sample outputs
 
-
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)<br><br>
 ### Useful Resources
 
 [yfinance](https://pypi.org/project/yfinance/)<br><br>
