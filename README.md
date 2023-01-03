@@ -9,10 +9,9 @@ the result is generated into both a file and the terminal output.
 ```mermaid
 stateDiagram-v2
 [*] --> Input
-Input --> [*]
 Input --> Hidden
-Hidden --> Input
 Hidden --> Output
+Output --> Input
 
 ```
   
