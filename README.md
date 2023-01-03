@@ -10,8 +10,8 @@ the result is generated into both a file and the terminal output.
 stateDiagram-v2
 state "User provides parameters" as [*]
 state "Input Layer" as Input
-state "Hidden Layer as Hidden
-state "Output Layer as Output
+state "Hidden Layer" as Hidden
+state "Output Layer" as Output
 [*] --> Input
 Input --> Hidden
 Hidden --> Output
