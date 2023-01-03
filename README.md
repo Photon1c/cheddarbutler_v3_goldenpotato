@@ -37,3 +37,4 @@ Deadline: Jan 10, 2023
 [yfinance](https://pypi.org/project/yfinance/)<br><br>
 [Alpaca Trade API](https://github.com/alpacahq/alpaca-trade-api-python)<br><br>
 [Ally API](https://www.ally.com/api/invest/documentation/getting-started/)<br><br>
+[Mermaid](https://github.com/mermaid-js/mermaid)
