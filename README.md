@@ -8,6 +8,10 @@ the result is generated into both a file and the terminal output.
 
 ```mermaid
 stateDiagram-v2
+state "User provides parameters" as [*]
+state "Input Layer" as Input
+state "Hidden Layer as Hidden
+state "Output Layer as Output
 [*] --> Input
 Input --> Hidden
 Hidden --> Output
