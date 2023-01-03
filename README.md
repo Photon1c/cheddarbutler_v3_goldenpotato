@@ -15,7 +15,7 @@ state "Output Layer" as Output
 [*] --> Input
 Input --> Hidden
 Hidden --> Output
-Output --> Input
+Output --> Input: Review
 
 ```
   
