@@ -13,6 +13,7 @@ quick_list = []
 def option_chain_generator():
     for i in Symbols:
         chain_symbol = yf.Ticker(str(i))
+        print(chain_symbol.options)
         chain = chain_symbol.option_chain("2023-01-20")
         call_chain = chain.calls
         put_chain = chain.puts 

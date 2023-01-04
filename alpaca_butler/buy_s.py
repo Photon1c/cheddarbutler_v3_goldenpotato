@@ -26,7 +26,6 @@ def dataframe_creator():
     target_symbols_long = []
     target_symbols_short = []
     for i in Symbols:
-
         quote_iter = api.get_bars(i, TimeFrame.Day, start = ninedaysago, end = yesterday, limit=80)._raw
         quotes_df0 = pd.DataFrame(quote_iter)
         quotes_df = pd.DataFrame()
