@@ -6,12 +6,13 @@ as well as the second version Bacon Saver which used the yfinance module. It is
 simplified into three steps. The first takes the inputs as indicated by
 the user. The second is a hidden layer which screens for the data requested. Finally
 the result is generated into both a file and the terminal output. 
+<br>
 
 ```mermaid
 stateDiagram-v2
 state "User provides parameters" as [*]
 state "Input Layer" as Input
-state "Hidden Layer" as Hidden
+state "Hidden Layer " as Hidden
 state "Output Layer" as Output
 [*] --> Input
 Input --> Hidden
@@ -31,15 +32,15 @@ Pending tasks:
 Deadline: Jan 10, 2023
 <br>
 
-- [ ] Create iterable list of stock tickers to pass through functions
+- [ ] Create iterable list of stock tickers to pass through functions. :test_tube:
 *1/4/2023 - Ran into an exception while retrieving option chain data from yfinance, currently monitoring stack trace:*
 
 ```python 
    yfinance  "ValueError: Expiration `YYYY-MM-DD` cannot be found. Available expiration are: []"
 ```
-- [ ] Create trade execution function
+- [ ] Create trade execution function.:computer:
 
-- [ ] Generate additional sample outputs :tada:
+- [ ] Generate additional sample outputs.:printer:
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)<br><br>
 ### Useful Resources
