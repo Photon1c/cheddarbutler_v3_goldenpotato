@@ -54,6 +54,12 @@ Deadline: Jan 10, 2023
    run Command
 ```
 
+Good advice:
+
+[![Kenny Rogers- The Gambler](https://img.youtube.com/vi/7hx4gdlfamo/0.jpg)](https://www.youtube.com/watch?v=7hx4gdlfamo)
+  
+  
+  
 </p>
 </details>
 
