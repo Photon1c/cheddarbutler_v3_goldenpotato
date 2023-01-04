@@ -1,4 +1,4 @@
-# Cheddar Butler v3 Golden Potato Edition
+# :potato: :cheese: Cheddar Butler v3 Golden Potato Edition :potato: :cheese: 
 <br>
 <img src='logo3goldenpotato.png' alt = 'Golden Potato' width = '150' height = '250'>
 Cheddar Butler v3 builds upon the first closed version that used the Ameritrade API,
