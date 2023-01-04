@@ -2,4 +2,8 @@ pandas
 yfinance
 alpaca-trade-api
 numpy
+<<<<<<< HEAD
 flask
+=======
+flask
+>>>>>>> refs/remotes/origin/main
