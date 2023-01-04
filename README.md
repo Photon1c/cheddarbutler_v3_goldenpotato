@@ -23,18 +23,26 @@ Output --> Input: Review
 
 
 ***Check back for updates to this project***
+<br<
+<br>
 <br>
 Pending tasks:
 <br>
 Deadline: Jan 10, 2023
 <br>
+
 - [ ] Create iterable list of stock tickers to pass through functions
+*1/4/2023 - Ran into an exception while retrieving option chain data from yfinance, currently monitoring stack trace:*
+
+```python 
+   yfinance  "ValueError: Expiration `YYYY-MM-DD` cannot be found. Available expiration are: []"
+```
 - [ ] Create trade execution function
-- [ ] Generate additional sample outputs
+
+- [ ] Generate additional sample outputs :tada:
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)<br><br>
 ### Useful Resources
-
 [yfinance](https://pypi.org/project/yfinance/)<br><br>
 [Alpaca Trade API](https://github.com/alpacahq/alpaca-trade-api-python)<br><br>
 [Ally API](https://www.ally.com/api/invest/documentation/getting-started/)<br><br>
