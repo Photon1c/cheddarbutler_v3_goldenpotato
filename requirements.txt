@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 pandas
 yfinance
 alpaca-trade-api
 numpy
 flask
-=======
-pandas
-yfinance
-alpaca-trade-api
-numpy
-flask
->>>>>>> 0be483d11f651e3f85c32353938a77127a6a66d7
