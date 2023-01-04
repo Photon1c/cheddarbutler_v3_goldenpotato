@@ -37,8 +37,9 @@ def collect_inputs():
         #takes user input and converts it to data frame
         stock_list = input("Enter stock tickers separated by a comma: \n").split(', ')
         quick_list.append(stock_list)
-        out_quick = pd.DataFrame(quick_list).T
-        print(out_quick)
+        out_quick = pd.DataFrame(index=None)
+        out_quick["symbol"] = pd.DataFrame(quick_list).T
+        Symbols.append(out_quick["symbol"])
 
 
         
@@ -85,6 +86,7 @@ def collect_inputs():
     #print(e_date)
     #print(option_price)
     format = "%Y-%m-%d"
+
 
     
  #function to get list of stocks from yfinance. These can either be the daily top moving stocks, or the after hours list from MarketWatch.

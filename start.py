@@ -9,5 +9,8 @@ from alpaca_butler.input_collector import Symbols
 if __name__ == "__main__":
     collect_inputs()
     for i in Symbols:
-        dataframe_creator(i)
-        option_chain_generator(i)
+        dataframe_creator()
+    for i in Symbols:
+        option_chain_generator()
+        
+print(Symbols)

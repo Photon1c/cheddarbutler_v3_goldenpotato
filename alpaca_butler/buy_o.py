@@ -1,13 +1,18 @@
 #more work needs to be done on slicing into the optimal option chain rows. 
 #Example: for stock i find options where price is <.5. How to handle multiple results?
 import yfinance as yf
+from .input_collector import Symbols
+
+
+i = 0
 
 
 
 quick_list = []
 
 def option_chain_generator():
-    chain_symbol = yf.Ticker(i)
+    for i in Symbols:
+        chain_symbol = yf.Ticker(str(i))
     chain = chain_symbol.option_chain("2023-01-20")
     call_chain = chain.calls
     put_chain = chain.puts 
