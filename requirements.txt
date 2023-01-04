@@ -1,0 +1,5 @@
+pandas
+yfinance
+alpaca-trade-api
+numpy
+flask
