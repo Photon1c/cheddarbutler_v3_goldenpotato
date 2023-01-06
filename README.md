@@ -5,7 +5,8 @@ Cheddar Butler v3 builds upon the first closed version that used the Ameritrade 
 as well as the second version Bacon Saver which used the yfinance module. It is 
 simplified into three steps. The first takes the inputs as indicated by
 the user. The second is a hidden layer which screens for the data requested. Finally
-the result is generated into both a file and the terminal output. 
+the result is generated into both a file and the terminal output. The flow looks somewhat like this:
+<br>
 <br>
 
 ```mermaid
@@ -33,11 +34,17 @@ Deadline: Jan 10, 2023
 <br>
 
 - [ ] Create iterable list of stock tickers to pass through functions. :test_tube:
+
 *1/4/2023 - Ran into an exception while retrieving option chain data from yfinance, currently monitoring stack trace:*
 
 ```python 
    yfinance  "ValueError: Expiration `YYYY-MM-DD` cannot be found. Available expiration are: []"
 ```
+<br>
+
+*1/5/2023 - The input ticker symbol required for the yfinance module needs to be correct. So far the function is iterating through an object list and it is starting with the index of zero, whereas there was a breakthrough late last night when converting this input. If this the case then this new method needs to be grafted into the old code and the old code should be intensively debugged. Furthermore, the option data frame is now cleaned up in experimental mode and this also needs to be merged with the old code. The repository should be on time
+to be updated by the deadline.*
+
 - [ ] Create trade execution function.:computer:
 
 - [ ] Generate additional sample outputs.:printer:
