@@ -4,6 +4,7 @@ import datetime as dt
 import pandas as pd
 from datetime import date
 import datetime
+import yfinance as yf
 
 
 #create automated default 2 week historical data window:
@@ -19,6 +20,7 @@ two_weeks_from_nearest_friday_formatted = two_weeks_from_nearest_friday.strftime
 
 source_greeting = str("For the data source: Enter M if you will be running Golden Potato using a list of default \ndaily top moving stocks. Enter L if you will be manually entering a list of stock tickers. \nFinally, enter F if you want to enter the name of a CSV file containing a list of stock tickers. \nPlease refer to the documentation for the preferred format. ")
 
+interim_list =[]
 Symbols = []
 
 
@@ -36,20 +38,16 @@ def collect_inputs():
     if source == "L":
         #takes user input and converts it to data frame
         stock_list = input("Enter stock tickers separated by a comma: \n").split(', ')
-        quick_list.append(stock_list)
-        out_quick = pd.DataFrame(index=None)
-        out_quick["symbol"] = pd.DataFrame(quick_list, index=None).T
-        new_list = out_quick["symbol"]
-        Symbols.append(new_list)
-
+        Symbols.append(stock_list)
         print(Symbols)
 
-        
-        
-        
-        
-        
-        
+            
+            
+            
+            
+            
+
+
     if source == "F":
         source = pd.read_csv(r"D:\mainline\goldenpotato\datasets\sample_csv_list.csv")
         quick_list.append(source)
@@ -90,6 +88,7 @@ def collect_inputs():
     format = "%Y-%m-%d"
 
 
+        
     
  #function to get list of stocks from yfinance. These can either be the daily top moving stocks, or the after hours list from MarketWatch.
 
