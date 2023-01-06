@@ -9,22 +9,23 @@ import datetime
 import yfinance as yf
 from .input_collector import Symbols
 
-
 #call API
 api = tradeapi.REST(key_id=config.LIVE_API_KEY, secret_key=config.LIVE_SECRET_KEY, api_version='v2',
                                         base_url=config.LIVE_API_BASE_URL)
-target_list_long = []
-target_list_short = []
+target_symbols_long = []
+target_symbols_short = []
 
-i = 0
+i = str
 
 quick_list = []
+
+option_long = bool
+
+option_short = bool
 
 
 #create dataframe adding EMA columns to date, stock, and volume columns.     
 def dataframe_creator():
-    target_symbols_long = []
-    target_symbols_short = []
     for i in Symbols:
         quote_iter = api.get_bars(i, TimeFrame.Day, start = ninedaysago, end = yesterday, limit=80)._raw
         quotes_df0 = pd.DataFrame(quote_iter)
@@ -43,6 +44,8 @@ def dataframe_creator():
             target_symbols_long.append(target_list_long)
             print("Stock ", i, "is within buying parameters. Dataframe: " , "\n")
             print(quotes_df.tail(1))
+            option_long == True
+            
         else:
             print("Stock", i, "is not within buying parameters")
 
@@ -52,12 +55,19 @@ def dataframe_creator():
             target_symbols_short.append(target_list_short)
             print("Stock ", i, "is within selling parameters. Dataframe: " , "\n")
             print(quotes_df.tail(1))
+            option_short == True
         else:
             print("Stock", i, "is not within selling parameters")
 
+    print("The target symbols to go long on are: ")
+    print(target_symbols_long)
+    print("The target symbols to short are: ", "\n", target_symbols_short)
+            
+            
 now = date.today()
 today = now.strftime('%Y-%m-%d')
 yesterday = (now - pd.Timedelta('1day')).strftime('%Y-%m-%d')
 ninedaysago = (now - pd.Timedelta('9day')).strftime('%Y-%m-%d')
+
 
         

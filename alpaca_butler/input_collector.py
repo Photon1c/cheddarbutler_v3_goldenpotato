@@ -19,13 +19,13 @@ two_weeks_from_nearest_friday_formatted = two_weeks_from_nearest_friday.strftime
 
 source_greeting = str("For the data source: Enter M if you will be running Golden Potato using a list of default \ndaily top moving stocks. Enter L if you will be manually entering a list of stock tickers. \nFinally, enter F if you want to enter the name of a CSV file containing a list of stock tickers. \nPlease refer to the documentation for the preferred format. ")
 
-
-manual_df = pd.DataFrame()
-
 Symbols = []
+
+
 option_price = []
 
 def collect_inputs():
+    new_list = []
     quick_list = []
     print(source_greeting)
     source = input("Enter M, L, or F: ")
@@ -38,9 +38,11 @@ def collect_inputs():
         stock_list = input("Enter stock tickers separated by a comma: \n").split(', ')
         quick_list.append(stock_list)
         out_quick = pd.DataFrame(index=None)
-        out_quick["symbol"] = pd.DataFrame(quick_list).T
-        Symbols.append(out_quick["symbol"])
+        out_quick["symbol"] = pd.DataFrame(quick_list, index=None).T
+        new_list = out_quick["symbol"]
+        Symbols.append(new_list)
 
+        print(Symbols)
 
         
         
