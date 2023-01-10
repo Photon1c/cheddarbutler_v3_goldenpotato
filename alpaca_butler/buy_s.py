@@ -41,8 +41,8 @@ def dataframe_creator():
         quotes_df['Volume'] = quotes_df0['v'].apply(lambda x : "{:,}".format(x))
         bool_long = quotes_df["EMA9"].iloc[-1] < quotes_df["Close"].iloc[-1]  ##create Boolean to filter out stocks to go long on.
         if bool_long == True:
-            temp_long_symbol = i
-            target_symbols_long = temp_long_symbol
+            target_list_long = i
+            target_symbols_long.append(target_list_long)
             print("Stock ", i, "is within buying parameters. Dataframe: " , "\n")
             print(quotes_df.tail(1))
             option_long == True
@@ -52,19 +52,22 @@ def dataframe_creator():
 
         bool_short = quotes_df["EMA9"].iloc[-1] > quotes_df["Close"].iloc[-1]  ##create second boolean to filter out stocks to short.
         if bool_short == True:
-            temp_short_symbol = i
-            target_symbols_short.append(temp_short_symbol)
+            target_list_short = i
+            target_symbols_short.append(target_list_short)
             print("Stock ", i, "is within selling parameters. Dataframe: " , "\n")
             print(quotes_df.tail(1))
             option_short == True
         else:
             print("Stock", i, "is not within selling parameters")
+    print_lists()
+
+def print_lists():
 
     print("The target symbols to go long on are: ")
     print(target_symbols_long)
-    print("The target symbols to short are: ", "\n", target_symbols_short)
-            
-            
+    print("The target symbols to short are: ", "\n", target_symbols_short)            
+
+
 now = date.today()
 today = now.strftime('%Y-%m-%d')
 yesterday = (now - pd.Timedelta('1day')).strftime('%Y-%m-%d')

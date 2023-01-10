@@ -39,7 +39,7 @@ def collect_inputs():
         #takes user input and converts it to data frame
         stock_list = input("Enter stock tickers separated by a comma: \n").split(', ')
         Symbols.append(stock_list)
-        print(Symbols)
+       
 
             
             
