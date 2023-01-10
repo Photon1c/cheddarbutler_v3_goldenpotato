@@ -1,0 +1,4 @@
+It is approaching midnight and some rest is long overdue. The present challenges of this project are:
+
+a)Successfully linking the start, input_collector, buy_s, and buy_o modules. This means zero exceptions thrown and currently the list names are being reference before assignment. Defining global and local variables is most likely the solution but more research is warranted. Update- this task is 50% complete. It is possible to iterate over the data frame creator, while the option chain generator needs to be debugged further.
+
