@@ -55,6 +55,7 @@ needs work.*
 - [ ] Create trade execution function.:computer:
 
 <p>
+    </details>
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)<br><br>
 ### Useful Resources
