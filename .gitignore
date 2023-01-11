@@ -1,3 +1,7 @@
 /jupyternotebooks/config.py
 /alpaca_butler/config.py
 .config.py
+.ipynb_checkpoints/
+__pycache__/
+temptestnb.ipynb
+/alpaca_butler/__pycache__/
