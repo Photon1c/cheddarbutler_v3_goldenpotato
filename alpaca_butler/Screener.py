@@ -55,9 +55,9 @@ def start_screen():
                 optc = stock.option_chain("2023-01-20")
                 optcl = optc.calls
                 optcd = pd.DataFrame(optcl)
-                optcd.rename(columns = {'lastTradeDate':'lstTrade', 'lastPrice': 'last', 'openInterest': 'oInterest', 'impliedVolatility': 'iVol'}, inplace=True)
+                optcd.rename(columns = {'lastTradeDate':'lstTrade', 'lastPrice': 'last', 'openInterest': 'OI', 'impliedVolatility': 'IV'}, inplace=True)
                 optcd['lstTrade'] = optcd['lstTrade'].dt.strftime('%m/%d/%Y')
-                print("Calls for ", i, "are: ", "\n", optcd[['lstTrade', 'strike', 'last', 'bid', 'ask', 'volume', 'oInterest', 'iVol']][3:5])
+                print("Calls for ", i, "are: ", "\n", optcd[['lstTrade', 'strike', 'last', 'bid', 'ask', 'volume', 'OI', 'IV']][40:45])
             except ValueError as err:
                 print("no calls available for ", i)
                 print("\n")
@@ -74,9 +74,9 @@ def start_screen():
                 optp = stock.option_chain("2023-01-20")
                 optpl = optp.puts
                 optpd = pd.DataFrame(optpl)
-                optpd.rename(columns = {'lastTradeDate':'lstTrade', 'lastPrice': 'last', 'openInterest': 'oInterest', 'impliedVolatility': 'iVol'}, inplace=True)
+                optpd.rename(columns = {'lastTradeDate':'lstTrade', 'lastPrice': 'last', 'openInterest': 'OI', 'impliedVolatility': 'IV'}, inplace=True)
                 optpd['lstTrade'] = optpd['lstTrade'].dt.strftime('%m/%d/%Y')
-                print("Puts for ", i, "are: ", "\n", optpd[['lstTrade', 'strike', 'last', 'bid', 'ask', 'volume', 'oInterest', 'iVol']][3:5])
+                print("Puts for ", i, "are: ", "\n", optpd[['lstTrade', 'strike', 'last', 'bid', 'ask', 'volume', 'OI', 'IV']][40:45])
             except ValueError as err:
                 print("No puts available for ", i)
                 print("\n")
@@ -91,10 +91,7 @@ def start_screen():
 
 
 if __name__ == '__main__':
-    try:
-        start_screen()
-    except:
-        start_screen()
+    start_screen()
 
 print("The stocks to go long on are: ", target_symbols_long, "\n")
 print("The stocks to go short on are: ", target_symbols_short)
