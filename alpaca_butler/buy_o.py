@@ -15,7 +15,7 @@ def option_chain_generator():
 
         try:
             optc = chain_symbol.option_chain("2023-01-20")
-            optcz = optc.calls[['lastTradeDate', 'strike', 'lastPrice', 'bid', 'ask', 'volume', 'openInterest', 'impliedVolatility']][30:60]
+            optcz = optc.calls[['lastTradeDate', 'strike', 'lastPrice', 'bid', 'ask', 'volume', 'openInterest', 'impliedVolatility']][20:55]
             optczdf = pd.DataFrame(optcz)
 
             optczdf['lastTradeDate'] = optczdf['lastTradeDate'].dt.strftime('%m/%d/%Y')
@@ -32,7 +32,7 @@ def option_chain_generator():
 
             try:
                 optp = chain_symbol.option_chain("2023-01-20")
-                optpz = optp.puts[['lastTradeDate', 'strike', 'lastPrice', 'bid', 'ask', 'volume', 'openInterest', 'impliedVolatility']][30:60]
+                optpz = optp.puts[['lastTradeDate', 'strike', 'lastPrice', 'bid', 'ask', 'volume', 'openInterest', 'impliedVolatility']][20:50]
                 optpzdf = pd.DataFrame(optpz)
                 
                 optpzdf['lastTradeDate'] = optpzdf['lastTradeDate'].dt.strftime('%m/%d/%Y')

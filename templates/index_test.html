@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-      
-         <p>Hello, today it is <u><label id='today'></label></u></p></h2>
-    <br>
+        <b><p style="color:yellow;">Hello, today it is <u><label id='today'></label></u></p></b>
     <div id="pi" class="alert alert-primary"></div>
-          
+       
   </head>
-  <body>
+  <body bgcolor="darkblue" style="color:yellow;">
+      <py-term></py-term>
  <py-script>
       print("Welcome to Cheddar Butler! This space is meant to run the script's output from a web terminal. Check back for more updated rendered templates that use pyscript, pandas, and broker APIs to create option chain screens.")
       import datetime as dt
@@ -30,21 +29,18 @@
         
         
       </py-script>      
-        <button onclick="showX()">Click Me To Show Status Of Web Server App, or press Shift+Enter in cell below</button>  
+      
 
           <script>
         function showX(){
             console.log(`In Python right now, x = ${pyscript.runtime.globals.get('x')}`)
-        }
-    
-    </script>
- 
       
+      </script>   
       
 <div id="replOutput" style="height: 75px;" "width: 50px;"></div>
 <py-repl output="replOutput">
     print(x)
 </py-repl>
-      
+        <button onclick="showX()">Click Me To Show Status Of Web Server App, or press Shift+Enter in cell below</button>  
   </body>
 </html>
