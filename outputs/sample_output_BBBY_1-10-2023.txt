@@ -1,0 +1,18 @@
+Stock  BBBY is within buying parameters. Dataframe:
+
+         Date  Close     Volume  EMA9  EMA20  EMA50 Symbol
+39 2023-01-10   2.07  109269300  2.04   2.37   2.69   BBBY
+
+
+Calls for  BBBY are:
+      lstTrade  strike  last  bid  ask  volume  oInterest      iVol
+3  01/10/2023     2.0  0.49  0.0  0.0   10941          0  0.000010
+4  01/10/2023     2.5  0.32  0.0  0.0    3877          0  0.500005
+         Date  Close     Volume  EMA9  EMA20  EMA50 Symbol
+39 2023-01-10   2.07  109269300  2.04   2.37   2.69   BBBY
+
+
+Stock BBBY is not within selling parameters
+The stocks to go long on are:  ['BBBY']
+
+The stocks to go short on are:  []
