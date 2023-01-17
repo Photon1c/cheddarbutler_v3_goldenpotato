@@ -32,7 +32,7 @@ Output --> Input: Review
 <br>
 Pending tasks:
 <br>
-Deadline: Jan 10, 2023
+Deadline: Jan 16, 2023
 <br>
 
 - [x] Create iterable list of stock tickers to pass through functions. :test_tube:
@@ -51,6 +51,8 @@ to be updated by the deadline.*
 
 *1/10/2023 - The Screener.py and start.py modules are now working. Adding sample outputs, while sell function still
 needs work.*
+
+*1/16/2023 - Trade execution function will be delayed due to website upgrades. Matplotlib animations of option payoff functions came up as an interesting added application to the outputted Data Frames, if not an interesting separate project in the future.*
 
 - [ ] Create trade execution function.:computer:
 
@@ -82,7 +84,8 @@ Good advice:
 
 [![Kenny Rogers- The Gambler](https://img.youtube.com/vi/7hx4gdlfamo/0.jpg)](https://www.youtube.com/watch?v=7hx4gdlfamo)
   
-  
+Solid reads:
+[![Physics of Wall Street](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)
   
 </p>
 </details>
