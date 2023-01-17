@@ -85,7 +85,7 @@ Good advice:
 [![Kenny Rogers- The Gambler](https://img.youtube.com/vi/7hx4gdlfamo/0.jpg)](https://www.youtube.com/watch?v=7hx4gdlfamo)
   
 Solid reads:
-[![Physics of Wall Street](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)
+[![Physics of Wall Street](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)
   
 </p>
 </details>
