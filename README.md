@@ -21,8 +21,6 @@ Hidden --> Output
 Output --> Input: Review
 
 ```
-  
-
 
 ***Check back for updates to this project***
 <br>
@@ -32,7 +30,7 @@ Output --> Input: Review
 <br>
 Pending tasks:
 <br>
-Deadline: Jan 16, 2023
+Deadline: Jan 31, 2023
 <br>
 
 - [x] Create iterable list of stock tickers to pass through functions. :test_tube:
