@@ -21,8 +21,6 @@ Hidden --> Output
 Output --> Input: Review
 
 ```
-  
-
 
 ***Check back for updates to this project***
 <br>
@@ -32,7 +30,7 @@ Output --> Input: Review
 <br>
 Pending tasks:
 <br>
-Deadline: Jan 16, 2023
+Deadline: Jan 31, 2023
 <br>
 
 - [x] Create iterable list of stock tickers to pass through functions. :test_tube:
@@ -85,7 +83,7 @@ Good advice:
 [![Kenny Rogers- The Gambler](https://img.youtube.com/vi/7hx4gdlfamo/0.jpg)](https://www.youtube.com/watch?v=7hx4gdlfamo)
   
 Solid reads:
-[![Physics of Wall Street](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)
+[The Physics Of Wall Street](https://www.amazon.com/Physics-Wall-Street-Predicting-Unpredictable-ebook/dp/B006R8PMJS)
   
 </p>
 </details>
