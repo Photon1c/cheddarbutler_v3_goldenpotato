@@ -30,9 +30,14 @@ Output --> Input: Review
 <br>
 Pending tasks:
 <br>
-Deadline: Jan 31, 2023
+None, project suspended 6/5/2023
 <br>
+- [x] Sunset status for project   
 
+*6/5/2023 Project is being suspended as it has mostly accomplished its intended goals of understanding data frames better. ChatGPT now powering this entire repositories debugging and content creation. Stay tuned for updates on this and other projects :)
+<br>   
+![Picture of a tray of golden potatoes](goldenpotato.png)
+<br>
 - [x] Create iterable list of stock tickers to pass through functions. :test_tube:
 
 *1/4/2023 - Ran into an exception while retrieving option chain data from yfinance, currently monitoring stack trace:*
