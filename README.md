@@ -34,7 +34,7 @@ None, project suspended 6/5/2023
 <br>
 - [x] Sunset status for project   
 
-*6/5/2023 Project is being suspended as it has mostly accomplished its intended goals of understanding data frames better. ChatGPT now powering these accounts' entire repositories' debugging and content creation. Stay tuned for updates on this and other projects :)
+*6/5/2023 Project is being suspended as it has mostly accomplished its intended goals of understanding data frames better. ChatGPT now powering these accounts' entire repositories' debugging and content creation. Stay tuned for updates on this and other projects :)*
 <br>   
 ![Picture of a tray of golden potatoes](goldenpotato.png)
 <br>
